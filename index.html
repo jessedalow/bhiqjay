@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BHIQJAY creates custom-tailored and bespoke outfits with precision, fit and individuality.">
+  <meta name="theme-color" content="#171714">
+  <title>BHIQJAY | Bespoke Tailoring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171714;--paper:#f4f0e8;--cream:#e9e1d3;--gold:#b89a68;--muted:#77736b;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none} img{display:block;width:100%;height:100%;object-fit:cover}
+    .wrap{width:min(1160px,90%);margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700}
+    header{position:absolute;top:0;left:0;width:100%;z-index:5;color:white;border-bottom:1px solid #ffffff2b}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Playfair Display",serif;font-size:1.8rem;letter-spacing:.12em;font-weight:700}
+    .navlinks{display:flex;gap:30px;align-items:center;font-size:.82rem}.navlinks a:hover{color:#d7bd91}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#171714;padding:14px 21px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:.2s}
+    .nav-cta:hover,.button:hover{background:#d0b486;transform:translateY(-2px)}
+    .menu{display:none;background:none;border:0;color:white;font-size:1.6rem}
+    .hero{min-height:760px;height:94vh;max-height:900px;position:relative;background:#26231f;display:flex;align-items:center;color:white}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,13,12,.88),rgba(13,13,12,.48) 52%,rgba(13,13,12,.1)),url("https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=2000&q=85") center/cover}
+    .hero-content{position:relative;padding-top:90px;max-width:690px}.hero h1{font:600 clamp(3.3rem,7vw,6.6rem)/1.02 "Playfair Display",serif;margin:20px 0}.hero p{max-width:490px;color:#e2ded6;line-height:1.8;font-size:1rem;margin-bottom:32px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .button.outline{background:transparent;color:white;border:1px solid #ffffff8a}.button.outline:hover{background:white;color:var(--ink)}
+    section{padding:100px 0}.section-head{max-width:650px;margin-bottom:42px}.section-head h2{font:600 clamp(2.3rem,4vw,3.7rem)/1.12 "Playfair Display",serif;margin:12px 0}.section-head p{color:var(--muted);line-height:1.8}
+    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro-photo{height:570px;position:relative}.intro-photo:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);z-index:-1}
+    .intro-copy p{color:var(--muted);line-height:1.9}.intro-copy .button{margin-top:16px}
+    .services{background:var(--ink);color:white}.services .section-head p{color:#bdb8ae}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{border:1px solid #ffffff28;padding:30px;min-height:260px}.service-number{color:var(--gold);font:500 2rem "Playfair Display",serif}.service-card h3{font:600 1.5rem "Playfair Display",serif;margin:26px 0 12px}.service-card p{color:#bdb8ae;line-height:1.7;font-size:.9rem}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:260px 260px;gap:14px}.gallery-grid .tall{grid-row:span 2}.gallery-grid .wide{grid-column:span 2}
+    .gallery-note{display:flex;justify-content:space-between;align-items:center;margin-top:25px;color:var(--muted);font-size:.88rem}
+    .pricing{background:var(--cream)}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.price-card{background:var(--paper);padding:32px;border:1px solid #d8cfbf}.price-card h3{font:600 1.45rem "Playfair Display",serif}.price-card p{color:var(--muted);line-height:1.7;min-height:80px}.price-card strong{display:block;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#9b7b4e;margin:22px 0}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.step{border-top:1px solid #c9b99f;padding-top:20px}.step b{font:500 2rem "Playfair Display",serif;color:var(--gold)}.step h3{font:600 1.2rem "Playfair Display",serif}.step p{color:var(--muted);font-size:.88rem;line-height:1.7}
+    .contact{background:#1e1e1a;color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}.contact p{color:#c3bfb5;line-height:1.8}.contact-details{margin-top:30px;display:grid;gap:13px;color:#e9e1d3;font-size:.92rem}.contact-form{display:grid;gap:14px}.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:15px;background:#ffffff0d;border:1px solid #ffffff3d;color:white;font:inherit;outline:none}.contact-form select option{color:#171714}.contact-form textarea{min-height:120px;resize:vertical}.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{border-color:var(--gold)}.contact-form .button{border:0;cursor:pointer}
+    footer{background:#11110f;color:#aaa69e;padding:26px 0;font-size:.78rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font:600 1.2rem "Playfair Display",serif;letter-spacing:.12em;color:white}
+    .whatsapp{position:fixed;right:22px;bottom:22px;z-index:10;background:#238b55;color:white;border-radius:40px;padding:14px 18px;font-size:.8rem;font-weight:700;box-shadow:0 8px 25px #0003}
+    @media(max-width:800px){.navlinks{display:none;position:absolute;top:81px;left:0;width:100%;padding:22px 5%;background:#171714;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero{min-height:680px}.intro-grid,.contact-grid{grid-template-columns:1fr;gap:42px}.intro-photo{height:430px;margin-right:18px}.service-grid,.price-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.gallery-grid .tall{grid-row:span 2}.gallery-grid .wide{grid-column:span 1}.process-grid{grid-template-columns:1fr 1fr}section{padding:75px 0}}
+    @media(max-width:480px){.hero h1{font-size:3.25rem}.hero{min-height:650px}.gallery-grid{grid-template-rows:180px 180px 180px}.process-grid{grid-template-columns:1fr}.gallery-note{align-items:flex-start;gap:12px;flex-direction:column}.whatsapp{right:12px;bottom:12px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#home">BHIQJAY</a>
+  <div class="navlinks" id="navlinks"><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="#pricing">PRICING</a><a href="#contact">CONTACT</a></div>
+  <a class="nav-cta" href="#contact">MAKE AN ENQUIRY</a><button class="menu" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</nav></div></header>
+<main>
+  <section class="hero" id="home"><div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Bespoke tailoring · Made with intention</div>
+    <h1>CRAFTED TO FIT.<br>MADE TO BE SEEN.</h1>
+    <p>Distinctive custom tailoring for people who value great fit, thoughtful details and personal style. Your vision, expertly brought to life.</p>
+    <div class="hero-actions"><a class="button" href="#contact">Start your order</a><a class="button outline" href="#gallery">Explore our work</a></div>
+  </div></div></section>
+  <section id="about"><div class="wrap intro-grid">
+    <div class="intro-photo"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1000&q=85" alt="Tailored formal clothing"></div>
+    <div class="intro-copy"><div class="eyebrow">The BHIQJAY standard</div><h2 style="font:600 clamp(2.4rem,4vw,3.7rem)/1.1 'Playfair Display',serif">Personal style deserves a personal fit.</h2>
+      <p>At BHIQJAY, we believe the right outfit does more than fit your body — it expresses who you are. We create custom-tailored and bespoke pieces with care, precision and an eye for detail.</p>
+      <p>From the first conversation to the final fitting, we work with you to shape an outfit that feels distinctly yours.</p><a class="button" href="#services">Discover our services</a>
+    </div>
+  </div></section>
+  <section class="services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we create</div><h2>Tailoring shaped around you.</h2><p>Whether you have a clear design in mind or need help developing one, we bring craftsmanship and considered style to every commission.</p></div>
+    <div class="service-grid">
+      <article class="service-card"><div class="service-number">01</div><h3>Bespoke Outfits</h3><p>Made-to-measure pieces developed around your preferences, measurements and individual style.</p></article>
+      <article class="service-card"><div class="service-number">02</div><h3>Traditional Wear</h3><p>Distinctive traditional pieces for celebrations, special occasions and everyday expression.</p></article>
+      <article class="service-card"><div class="service-number">03</div><h3>Formal & Occasion Wear</h3><p>Refined outfits for events and important moments, with attention to silhouette and finishing.</p></article>
+    </div>
+  </div></section>
+  <section id="gallery"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected work</div><h2>Details make the difference.</h2><p>A look at the styles, finishes and tailoring that shape the BHIQJAY approach. Replace these sample images with photographs of your own completed work.</p></div>
+    <div class="gallery-grid">
+      <div class="tall"><img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=85" alt="Tailored suit editorial"></div>
+      <div><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=700&q=85" alt="Men's formal outfit"></div>
+      <div><img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=85" alt="Fashion detail"></div>
+      <div class="wide"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=85" alt="Contemporary fashion styling"></div>
+    </div><div class="gallery-note"><span>Every piece tells a story. Let’s create yours.</span><a href="#contact">Enquire about a custom piece →</a></div>
+  </div></section>
+  <section class="pricing" id="pricing"><div class="wrap"><div class="section-head"><div class="eyebrow">Services & pricing</div><h2>Made to order. Quoted with clarity.</h2><p>Every bespoke order is different. Final pricing depends on design complexity, fabric choice and finishing requirements. Contact us for a quote before placing an order.</p></div>
+    <div class="price-grid">
+      <article class="price-card"><div class="eyebrow">01 / Custom</div><h3>Custom Tailoring</h3><p>Personalised garments created to your measurements and preferred fit.</p><strong>Price on Request</strong><a class="button" href="#contact">Request a quote</a></article>
+      <article class="price-card"><div class="eyebrow">02 / Traditional</div><h3>Traditional Wear</h3><p>Custom traditional outfits designed for your taste and occasion.</p><strong>Price on Request</strong><a class="button" href="#contact">Request a quote</a></article>
+      <article class="price-card"><div class="eyebrow">03 / Bespoke</div><h3>Bespoke Design</h3><p>A one-to-one design process for a distinctive, made-for-you outfit.</p><strong>Price on Request</strong><a class="button" href="#contact">Request a quote</a></article>
+    </div>
+  </div></section>
+  <section><div class="wrap"><div class="section-head"><div class="eyebrow">How it works</div><h2>Your idea, from first sketch to final fit.</h2></div>
+    <div class="process-grid"><div class="step"><b>01</b><h3>Consultation</h3><p>Tell us what you have in mind, your occasion and preferred style.</p></div><div class="step"><b>02</b><h3>Measurements</h3><p>We discuss measurements, fabric and the details that matter to you.</p></div><div class="step"><b>03</b><h3>Crafting</h3><p>Your garment is carefully made with attention to fit and finishing.</p></div><div class="step"><b>04</b><h3>Final fitting</h3><p>We arrange collection or fitting details and make sure the finish is right.</p></div></div>
+  </div></section>
+  <section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="eyebrow">Let's make something personal</div><h2 style="font:600 clamp(2.5rem,4vw,3.8rem)/1.1 'Playfair Display',serif">Have an outfit in mind?</h2><p>Tell us what you would like made. Share your preferred style, occasion and timeline, and start a conversation with BHIQJAY.</p><div class="contact-details"><span>✦ Custom tailoring & bespoke outfits</span><span>✦ Based in Rayfield, Jos, Plateau State</span><span>✦ Consultations by appointment</span><span>✦ WhatsApp enquiries welcome</span></div></div>
+    <form class="contact-form" onsubmit="sendWhatsApp(event)"><input id="customerName" required placeholder="Your name" aria-label="Your name"><input id="customerPhone" placeholder="Your phone number" aria-label="Your phone number"><select id="service" aria-label="Service of interest"><option value="">Select a service</option><option>Custom tailoring</option><option>Traditional wear</option><option>Formal / occasion wear</option><option>Bespoke design</option></select><textarea id="message" required placeholder="Tell us about the outfit you have in mind..." aria-label="Your message"></textarea><button class="button" type="submit">Send enquiry on WhatsApp</button></form>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">BHIQJAY</div><div style="margin-top:6px">Bespoke tailoring. Personal style.</div></div><div>© <span id="year"></span> BHIQJAY. All rights reserved.</div><div><a href="#home">Back to top ↑</a></div></div></footer>
+<a class="whatsapp" href="https://wa.me/2347046840755" target="_blank" rel="noopener">WhatsApp us ↗</a>
+<script>
+  document.getElementById('year').textContent=new Date().getFullYear();
+  function sendWhatsApp(e){
+    e.preventDefault();
+    const name=document.getElementById('customerName').value.trim();
+    const phone=document.getElementById('customerPhone').value.trim();
+    const service=document.getElementById('service').value;
+    const message=document.getElementById('message').value.trim();
+    const businessNumber='2347046840755';
+    const text=`Hello BHIQJAY, my name is ${name}. My phone number is ${phone||'not provided'}. Service: ${service||'Not specified'}. Enquiry: ${message}`;
+    window.open(`https://wa.me/${businessNumber}?text=${encodeURIComponent(text)}`,'_blank','noopener');
+  }
+</script>
+</body>
+</html>
